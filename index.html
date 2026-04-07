@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDIO BY MEL - Coiffure & Beauté Premium | Voisins-le-Bretonneux</title>
+    <meta name="description" content="STUDIO BY MEL : salon de beauté premium à Voisins-le-Bretonneux. Hair, Body, Zen. Coiffure, soins visage & corps. 4.9★ 526 avis">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <span class="logo-text">STUDIO BY MEL</span>
+            <span class="tagline">La beauté n'attend pas ✨</span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#soins">Nos Soins</a></li>
+            <li><a href="#equipe">L'Équipe</a></li>
+            <li><a href="#avis">Avis</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="https://planity.com" target="_blank" class="btn-rdv">Prendre RDV</a>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+<!-- ===== HERO SECTION ===== -->
+<header id="accueil" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+        <div class="rating-badge">
+            <span class="stars">⭐ 4,9</span>
+            <span class="reviews">526 avis clients</span>
+        </div>
+        <h1 class="hero-title">Votre espace beauté, soin & bien-être</h1>
+        <p class="hero-subtitle">Hair • Body • Zen — Voisins-le-Bretonneux</p>
+        <div class="hero-ctas">
+            <a href="https://planity.com" target="_blank" class="btn btn-primary">Prendre RDV en ligne</a>
+            <a href="#soins" class="btn btn-secondary">Découvrir nos soins</a>
+        </div>
+    </div>
+</header>
+
+<!-- ===== THREE UNIVERSE CARDS ===== -->
+<section id="universes" class="universes">
+    <div class="universes-container">
+        <div class="universe-card hair">
+            <div class="universe-icon">✂️</div>
+            <h3>HAIR</h3>
+            <p>Coupe, couleur, balayage, lissage, soins capillaires. Marque Subtil de référence.</p>
+            <a href="#soins" class="universe-link">Voir les prestations →</a>
+        </div>
+
+        <div class="universe-card body">
+            <div class="universe-icon">💆</div>
+            <h3>BODY</h3>
+            <p>Soins visage Esthéderm, épilations, lumière pulsée, onglerie Alessandro, cils & sourcils.</p>
+            <a href="#soins" class="universe-link">Voir les prestations →</a>
+        </div>
+
+        <div class="universe-card zen">
+            <div class="universe-icon">🧘</div>
+            <h3>ZEN</h3>
+            <p>Modelages relaxants, gommages, soins corps, SPA, silhouette Powershape.</p>
+            <a href="#soins" class="universe-link">Voir les prestations →</a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SERVICES GRID ===== -->
+<section id="soins" class="services">
+    <div class="services-container">
+        <h2 class="section-title">Nos Prestations</h2>
+
+        <div class="service-tabs">
+            <button class="tab-btn active" data-category="visage">Soins Visage</button>
+            <button class="tab-btn" data-category="corps">Soins Corps</button>
+            <button class="tab-btn" data-category="coiffure">Coiffure</button>
+            <button class="tab-btn" data-category="onglerie">Onglerie</button>
+            <button class="tab-btn" data-category="epilation">Épilations</button>
+            <button class="tab-btn" data-category="lumiere">Lumière Pulsée</button>
+            <button class="tab-btn" data-category="cils">Cils & Sourcils</button>
+        </div>
+
+        <div class="services-grid" id="services-grid">
+            <!-- Soins Visage -->
+            <div class="service-card featured" data-category="visage">
+                <div class="service-badge">Populaire</div>
+                <h4>Soin Visage Signature</h4>
+                <p class="brand">Esthéderm</p>
+                <div class="service-details">
+                    <span class="duration">60 min</span>
+                    <span class="price">85€</span>
+                </div>
+                <button class="btn-reserve">Réserver</button>
+            </div>
+
+            <div class="service-card" data-category="visage">
+                <h4>Nettoyage & Hydratation</h4>
+                <p class="brand">Esthéderm</p>
+                <div class="service-details">
+                    <span class="duration">45 min</span>
+                    <span class="price">65€</span>
+                </div>
+                <button class="btn-reserve">Réserver</button>
+            </div>
+
+            <div class="service-card" data-category="visage">
+                <h4>Peeling Doux</h4>
+                <p class="brand">Esthéderm</p>
+                <div class="service-details">
+                    <span class="duration">50 min</span>
+                    <span class="price">75€</span>
+                </div>
+                <button class="btn-reserve">Réserver</button>
+            </div>
+
+            <!-- Soins Corps -->
+            <div class="service-card" data-category="corps">
+                <h4>Gommage du Corps</h4>
+                <p class="brand">Soin Zen</p>
+                <div class="service-details">
+                    <span class="duration">30 min</span>
+                    <span class="price">55€</span>
+                </div>
+                <button class="btn-reserve">Réserver</button>
+            </div>
+
+            <div class="service-card featured" data-category="corps">
+                <div class="service-badge">Populaire</div>
+                <h4>Modelage Relaxant</h4>
+                <p class="brand">Soin Zen</p>
+                <div class="service-details">
+                    <span class="duration">60 min</span>
+                    <span class="price">80€</span>
+                </div>
+                <button class="btn-reserve">Réserver</button>
+            </div>
+
+            <div class="service-card" data-category="corps">
+                <h4>Silhouette Powershape</h4>
+                <p class="brand">Soin Zen</p>
+                <div class="service-details">
+                    <span class="duration">45 min</span>
+                    <span class="price">70€</span>
+                </div>
+                <button class="btn-reserve">Réserver</button>
+            </div>
+
+            <!-- Coiffure -->
+            <div class="service-card featured" data-category="coiffure">
+                <div class="service-badge">Populaire</div>
+                <h4>Coupe + Couleur</h4>
+                <p class="brand">Subtil</p>
+                <div class="service-details">
+                    <span class="duration">120 min</span>
+                    <span class="price">120€</span>
+                </div>
+                <button class="btn-reserve">Réserver</button>
+            </div>
+
+            <div class="service-card" data-category="coiffure">
+                <h4>Coupe</h4>
+                <p class="brand">Subtil</p>
+                <div class="service-details">
+                    <span class="duration">45 min</span>
+                    <span class="price">55€</span>
+                </div>
+                <button class="btn-reserve">Réserver</button>
+            </div>
+
+            <div class="service-card" data-category="coiffure">
+                <h4>Couleur</h4>
+                <p class="brand">Subtil</p>
+                <div class="service-details">
+                    <span class="duration">60 min</span>
+                    <span class="price">65€</span>
+                </div>
+                <button class="btn-reserve">Réserver</button>
+            </div>
+
+            <div class="service-card" data-category="coiffure">
+                <h4>Balayage</h4>
+                <p class="brand">Subtil</p>
+                <div class="service-details">
+                    <span class="duration">90 min</span>
+                    <span class="price">95€</span>
+                </div>
+                <button class="btn-reserve">Réserver</button>
+            </div>
+
+            <div class="service-card" data-category="coiffure">
+                <h4>Lissage Brésilien</h4>
+                <p class="brand">Subtil</p>
+                <div class="service-details">
+                    <span class="duration">120 min</span>
+                    <span class="price">110€</span>
+                </div>
+                <button class="btn-reserve">Réserver</button>
+            </div>
+
+            <div class="service-card" data-category="coiffure">
+                <h4>Soin Capillaire</h4>
+                <p class="brand">Subtil</p>
+                <div class="service-details">
+                    <span class="duration">30 min</span>
+                    <span class="price">35€</span>
+                </div>
+                <button class="btn-reserve">Réserver</button>
+            </div>
+
+            <!-- Onglerie -->
+            <div class="service-card" data-category="onglerie">
+                <h4>Manucure</h4>
+                <p class="brand">Alessandro</p>
+                <div class="service-details">
+                    <span class="duration">45 min</span>
+                    <span class="price">45€</span>
+                </div>
+                <button class="btn-reserve">Réserver</button>
+            </div>
+
+            <div class="service-card" data-category="onglerie">
+                <h4>Pédicure</h4>
+                <p class="brand">Alessandro</p>
+                <div class="service-details">
+                    <span class="duration">50 min</span>
+                    <span class="price">50€</span>
+                </div>
+                <button class="btn-reserve">Réserver</button>
+            </div>
+
+            <div class="service-card" data-category="onglerie">
+                <h4>Pose de Gel</h4>
+                <p class="brand">Alessandro</p>
+                <div class="service-details">
+                    <span class="duration">60 min</span>
+                    <span class="price">60€</span>
+                </div>
+                <button class="btn-reserve">Réserver</button>
+            </div>
+
+            <!-- Épilations -->
+            <div class="service-card" data-category="epilation">
+                <h4>Épilation Jambes</h4>
+                <p class="brand">Cire & Lasers</p>
+                <div class="service-details">
+                    <span class="duration">45 min</span>
+                    <span class="price">55€</span>
+                </div>
+                <button class="btn-reserve">Réserver</button>
+            </div>
+
+            <div class="service-card" data-category="epilation">
+                <h4>Épilation Brésilienne</h4>
+                <p class="brand">Cire & Lasers</p>
+                <div class="service-details">
+                    <span class="duration">30 min</span>
+                    <span class="price">45€</span>
+                </div>
+                <button class="btn-reserve">Réserver</button>
+            </div>
+
+            <div class="service-card" data-category="epilation">
+                <h4>Épilation Aisselles</h4>
+                <p class="brand">Cire & Lasers</p>
+                <div class="service-details">
+                    <span class="duration">15 min</span>
+                    <span class="price">20€</span>
+                </div>
+                <button class="btn-reserve">Réserver</button>
+            </div>
+
+            <!-- Lumière Pulsée -->
+            <div class="service-card" data-category="lumiere">
+                <h4>Séance Lumière Pulsée</h4>
+                <p class="brand">Épilation Laser</p>
+                <div class="service-details">
+                    <span class="duration">30-45 min</span>
+                    <span class="price">À partir de 80€</span>
+                </div>
+                <button class="btn-reserve">Réserver</button>
+            </div>
+
+            <div class="service-card" data-category="lumiere">
+                <h4>Pack 6 Séances</h4>
+                <p class="brand">Épilation Laser</p>
+                <div class="service-details">
+                    <span class="duration">À valider</span>
+                    <span class="price">380€</span>
+                </div>
+                <button class="btn-reserve">Réserver</button>
+            </div>
+
+            <!-- Cils & Sourcils -->
+            <div class="service-card" data-category="cils">
+                <h4>Extension Cils</h4>
+                <p class="brand">Beauté Cils</p>
+                <div class="service-details">
+                    <span class="duration">90 min</span>
+                    <span class="price">75€</span>
+                </div>
+                <button class="btn-reserve">Réserver</button>
+            </div>
+
+            <div class="service-card" data-category="cils">
+                <h4>Lifting Sourcils</h4>
+                <p class="brand">Beauté Sourcils</p>
+                <div class="service-details">
+                    <span class="duration">45 min</span>
+                    <span class="price">40€</span>
+                </div>
+                <button class="btn-reserve">Réserver</button>
+            </div>
+
+            <div class="service-card" data-category="cils">
+                <h4>Teinture Sourcils</h4>
+                <p class="brand">Beauté Sourcils</p>
+                <div class="service-details">
+                    <span class="duration">30 min</span>
+                    <span class="price">25€</span>
+                </div>
+                <button class="btn-reserve">Réserver</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SOCIAL PROOF / AVIS ===== -->
+<section id="avis" class="reviews">
+    <div class="reviews-container">
+        <h2 class="section-title">Ce que nos clientes disent</h2>
+
+        <div class="rating-summary">
+            <div class="rating-main">
+                <span class="rating-score">4,9</span>
+                <span class="rating-stars">⭐⭐⭐⭐⭐</span>
+            </div>
+            <div class="rating-details">
+                <div class="rating-item">
+                    <span class="rating-label">Accueil</span>
+                    <span class="rating-value">5,0 ⭐</span>
+                </div>
+                <div class="rating-item">
+                    <span class="rating-label">Propreté</span>
+                    <span class="rating-value">5,0 ⭐</span>
+                </div>
+                <div class="rating-item">
+                    <span class="rating-label">Ambiance</span>
+                    <span class="rating-value">4,9 ⭐</span>
+                </div>
+                <div class="rating-item">
+                    <span class="rating-label">Qualité</span>
+                    <span class="rating-value">5,0 ⭐</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonials-carousel">
+            <div class="testimonial">
+                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">"Équipe très accueillante et professionnelle. Résultat impeccable. Je reviens régulièrement!"</p>
+                <p class="testimonial-author">— Valérie M.</p>
+            </div>
+
+            <div class="testimonial">
+                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">"Sublime ! L'ambiance est so zen, le modelage était merveilleux. Vraiment une parenthèse de détente."</p>
+                <p class="testimonial-author">— Sophie L.</p>
+            </div>
+
+            <div class="testimonial">
+                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">"Mon coiffeur est juste un artiste ! Et puis les produits Subtil, ça change tout. Recommandé !"</p>
+                <p class="testimonial-author">— Marie D.</p>
+            </div>
+
+            <div class="testimonial">
+                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">"Première visite et déjà conquise. À refaire absolument ! Merci Mél et l'équipe."</p>
+                <p class="testimonial-author">— Céline K.</p>
+            </div>
+
+            <div class="testimonial">
+                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">"Un havre de paix au cœur de Voisins. Propriétaires attentionnés, prestations top. Du bonheur !"</p>
+                <p class="testimonial-author">— Laetitia P.</p>
+            </div>
+        </div>
+
+        <div class="carousel-controls">
+            <button class="carousel-btn prev" id="prev-carousel">←</button>
+            <button class="carousel-btn next" id="next-carousel">→</button>
+        </div>
+    </div>
+</section>
+
+<!-- ===== TEAM SECTION ===== -->
+<section id="equipe" class="team">
+    <div class="team-container">
+        <h2 class="section-title">Notre Équipe</h2>
+        <p class="section-subtitle">Des professionnelles passionnées par leur métier</p>
+
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="member-photo" style="background: linear-gradient(135deg, #E8C5B8 0%, #C9A97A 100%);"></div>
+                <h4>Mél</h4>
+                <p class="member-role">Fondatrice & Coiffeuse</p>
+                <p class="member-specialty">Spécialiste couleur & coupe signature</p>
+            </div>
+
+            <div class="team-member">
+                <div class="member-photo" style="background: linear-gradient(135deg, #A8B89A 0%, #C9A97A 100%);"></div>
+                <h4>Stéphanie</h4>
+                <p class="member-role">Esthéticienne</p>
+                <p class="member-specialty">Soins visage & Lumière Pulsée</p>
+            </div>
+
+            <div class="team-member">
+                <div class="member-photo" style="background: linear-gradient(135deg, #C9A97A 0%, #E8C5B8 100%);"></div>
+                <h4>Danielle</h4>
+                <p class="member-role">Thérapeute Bien-être</p>
+                <p class="member-specialty">Modelages & Soins relaxants</p>
+            </div>
+
+            <div class="team-member">
+                <div class="member-photo" style="background: linear-gradient(135deg, #3D2C2C 0%, #A8B89A 100%);"></div>
+                <h4>Charlotte</h4>
+                <p class="member-role">Onglère & Coiffeuse</p>
+                <p class="member-specialty">Onglerie Alessandro & Coupe</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PROMO / FIDÉLITÉ ===== -->
+<section class="promos">
+    <div class="promos-container">
+        <h2 class="section-title">Nos Offres Spéciales</h2>
+
+        <div class="promo-grid">
+            <div class="promo-card">
+                <div class="promo-icon">🎂</div>
+                <h3>Mois de votre Anniversaire</h3>
+                <p class="promo-discount">-15%</p>
+                <p class="promo-description">Profitez de -15% sur une sélection de prestations le mois de votre anniversaire</p>
+                <button class="btn btn-primary">En savoir plus</button>
+            </div>
+
+            <div class="promo-card">
+                <div class="promo-icon">🎁</div>
+                <h3>Cotisation Annuelle</h3>
+                <p class="promo-discount">100€/an</p>
+                <p class="promo-description">Adhérez à notre programme fidélité : -15% sur TOUTES les prestations + avantages</p>
+                <button class="btn btn-primary">Adhérer maintenant</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== BOOKING CTA ===== -->
+<section class="booking-cta">
+    <div class="booking-container">
+        <h2>Prenez soin de vous, quand vous voulez</h2>
+        <p class="booking-subtitle">Réservation en ligne 24h/24, confirmation immédiate</p>
+        <a href="https://planity.com" target="_blank" class="btn btn-large">Réserver sur Planity</a>
+        <div class="booking-phone">
+            <span>Ou appelez-nous au</span>
+            <a href="tel:+33130430405">01.30.43.04.05</a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== INFO & HORAIRES ===== -->
+<section id="contact" class="info-section">
+    <div class="info-container">
+        <div class="info-content">
+            <h2 class="section-title">Nous Trouver</h2>
+
+            <div class="address-card">
+                <h3>📍 Adresse</h3>
+                <p>Centre commercial Chamfleury</p>
+                <p>Rue Alfred de Vigny</p>
+                <p>78960 Voisins-le-Bretonneux</p>
+                <p class="address-note">(Au-dessus BNP Paribas)</p>
+            </div>
+
+            <div class="hours-card">
+                <h3>🕐 Horaires</h3>
+                <table class="hours-table">
+                    <tr>
+                        <td>Lundi</td>
+                        <td>11h - 18h</td>
+                    </tr>
+                    <tr>
+                        <td>Mardi</td>
+                        <td>9h - 19h</td>
+                    </tr>
+                    <tr>
+                        <td>Mercredi</td>
+                        <td>9h30 - 19h</td>
+                    </tr>
+                    <tr>
+                        <td>Jeudi</td>
+                        <td>9h30 - 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Vendredi</td>
+                        <td>9h - 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Samedi</td>
+                        <td>9h - 17h</td>
+                    </tr>
+                    <tr>
+                        <td>Dimanche</td>
+                        <td class="closed">Fermé</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="contact-card">
+                <h3>📞 Contact</h3>
+                <p><a href="tel:+33130430405">01.30.43.04.05</a></p>
+                <p><a href="https://www.google.com/maps/search/studio+by+mel+voisins+bretonneux" target="_blank">Voir sur Google Maps</a></p>
+            </div>
+        </div>
+
+        <div class="map-placeholder">
+            <div class="map-visual">
+                <div class="map-pin">📍</div>
+                <p>STUDIO BY MEL</p>
+                <p class="map-address">78960 Voisins-le-Bretonneux</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <h3>STUDIO BY MEL</h3>
+            <p>La beauté n'attend pas ✨</p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Liens Rapides</h4>
+            <ul>
+                <li><a href="#soins">Nos Soins</a></li>
+                <li><a href="#equipe">Notre Équipe</a></li>
+                <li><a href="https://planity.com" target="_blank">Réserver</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-social">
+            <h4>Nous Suivre</h4>
+            <div class="social-icons">
+                <a href="https://instagram.com" target="_blank" title="Instagram">📷</a>
+                <a href="https://facebook.com" target="_blank" title="Facebook">f</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 STUDIO BY MEL. Tous droits réservés.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
