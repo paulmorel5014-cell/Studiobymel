@@ -446,6 +446,56 @@ p {
     color: var(--deep-taupe);
 }
 
+/* ===== SERVICES INTRO ===== */
+.services-intro {
+    padding: var(--spacing-2xl) var(--spacing-lg);
+    background: white;
+}
+
+.services-intro-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-2xl);
+    align-items: center;
+}
+
+.services-intro-text h2 {
+    text-align: left;
+    font-size: 2.5rem;
+}
+
+.services-intro-text p {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--dark-gray);
+}
+
+.services-intro-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+}
+
+.intro-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    height: 250px;
+}
+
+.intro-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.intro-image:hover img {
+    transform: scale(1.05);
+}
+
 /* ===== SERVICES SECTION ===== */
 .services {
     padding: var(--spacing-2xl) var(--spacing-lg);
