@@ -269,24 +269,7 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background:
-        /* Grain texture de luxe */
-        repeating-linear-gradient(
-            0deg,
-            rgba(0, 0, 0, 0.02) 0px,
-            rgba(0, 0, 0, 0.02) 1px,
-            transparent 1px,
-            transparent 2px
-        ),
-        repeating-linear-gradient(
-            90deg,
-            rgba(0, 0, 0, 0.02) 0px,
-            rgba(0, 0, 0, 0.02) 1px,
-            transparent 1px,
-            transparent 2px
-        ),
-        /* Dégradé premium sophistiqué */
-        linear-gradient(135deg, #E8C5B8 0%, #D4B5A8 20%, #C9A97A 50%, #B89968 75%, #A8B89A 100%);
+    background: linear-gradient(135deg, #E8C5B8 0%, #D4B5A8 20%, #C9A97A 50%, #B89968 75%, #A8B89A 100%);
     z-index: -1;
     overflow: hidden;
 }
@@ -294,23 +277,18 @@ p {
 .hero-bg::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
     background-image:
-        /* Blob organique haut-gauche */
-        radial-gradient(circle 800px at 15% 30%, rgba(255, 255, 255, 0.25) 0%, transparent 50%),
-        /* Blob organique bas-droit */
-        radial-gradient(circle 600px at 85% 85%, rgba(255, 255, 255, 0.2) 0%, transparent 50%),
-        /* Blob organique gauche-bas */
-        radial-gradient(ellipse 700px 500px at 20% 110%, rgba(168, 184, 154, 0.15) 0%, transparent 60%),
-        /* Blob organique haut-droit */
-        radial-gradient(ellipse 900px 600px at 110% 0%, rgba(201, 169, 122, 0.12) 0%, transparent 60%),
-        /* Accent de lumière subtile */
-        radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
+        radial-gradient(ellipse 1000px 800px at 20% 40%, rgba(255, 255, 255, 0.35) 0%, transparent 40%),
+        radial-gradient(ellipse 900px 700px at 85% 70%, rgba(255, 255, 255, 0.25) 0%, transparent 45%),
+        radial-gradient(circle 600px at 10% 80%, rgba(168, 184, 154, 0.2) 0%, transparent 50%),
+        radial-gradient(ellipse 1100px 600px at 90% 20%, rgba(201, 169, 122, 0.18) 0%, transparent 50%);
     pointer-events: none;
-    animation: floatBackground 20s ease-in-out infinite;
+    animation: floatBackground 25s ease-in-out infinite;
+    filter: blur(2px);
 }
 
 .hero-bg::after {
@@ -321,21 +299,9 @@ p {
     width: 100%;
     height: 100%;
     background-image:
-        /* Lignes fines de botaniques */
-        repeating-linear-gradient(
-            45deg,
-            transparent,
-            transparent 200px,
-            rgba(255, 255, 255, 0.05) 200px,
-            rgba(255, 255, 255, 0.05) 201px
-        ),
-        /* Pattern subtil de points */
-        radial-gradient(2px 2px at 10% 20%, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) 1px, transparent 1px),
-        radial-gradient(2px 2px at 30% 40%, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) 1px, transparent 1px),
-        radial-gradient(2px 2px at 70% 60%, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) 1px, transparent 1px),
-        radial-gradient(2px 2px at 90% 80%, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+        linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, transparent 40%, transparent 60%, rgba(0, 0, 0, 0.05) 100%);
     pointer-events: none;
-    background-size: 100% 100%, 300px 300px, 300px 300px, 300px 300px, 300px 300px;
+    mix-blend-mode: overlay;
 }
 
 .hero-content {
