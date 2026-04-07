@@ -255,12 +255,13 @@ p {
 /* ===== HERO SECTION ===== */
 .hero {
     position: relative;
-    height: 90vh;
+    height: 95vh;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     margin-top: 60px;
+    min-height: 600px;
 }
 
 .hero-bg {
@@ -312,38 +313,44 @@ p {
     text-align: center;
     color: white;
     animation: fadeInUp 1s ease-out;
-    max-width: 800px;
+    max-width: 900px;
     padding: 0 var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-lg);
 }
 
 .rating-badge {
     display: inline-flex;
     align-items: center;
-    gap: var(--spacing-md);
+    gap: var(--spacing-sm);
     background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(20px);
     padding: var(--spacing-md) var(--spacing-xl);
     border-radius: 50px;
-    margin-bottom: var(--spacing-2xl);
+    margin-bottom: var(--spacing-lg);
     border: 1.5px solid rgba(255, 255, 255, 0.4);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
     transition: var(--transition);
 }
 
 .rating-badge:hover {
-    background: rgba(255, 255, 255, 0.3);
-    border: 1.5px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.32);
+    border: 1.5px solid rgba(255, 255, 255, 0.55);
+    transform: translateY(-2px);
 }
 
 .stars {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 }
 
 .reviews {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     font-weight: 500;
+    opacity: 0.95;
 }
 
 .hero-title {
@@ -401,6 +408,113 @@ p {
     background: rgba(255, 255, 255, 0.15);
     border-color: white;
     transform: translateY(-4px);
+}
+
+/* ===== HERO DECORATIVE ELEMENTS ===== */
+.hero-decorative-top {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+.decor-line {
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, white, transparent);
+    display: block;
+}
+
+.decor-dot {
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.separator {
+    margin: 0 var(--spacing-sm);
+    opacity: 0.7;
+}
+
+/* ===== UNIVERSE PREVIEW ===== */
+.hero-universes-preview {
+    display: flex;
+    gap: var(--spacing-lg);
+    justify-content: center;
+    margin: var(--spacing-lg) 0;
+    flex-wrap: wrap;
+}
+
+.universe-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-md) var(--spacing-lg);
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    border: 1.5px solid rgba(255, 255, 255, 0.25);
+    transition: var(--transition);
+    min-width: 110px;
+}
+
+.universe-preview:hover {
+    background: rgba(255, 255, 255, 0.18);
+    border-color: rgba(255, 255, 255, 0.35);
+    transform: translateY(-4px);
+}
+
+.universe-preview-icon {
+    font-size: 2rem;
+    display: block;
+}
+
+.universe-preview-text {
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    opacity: 0.95;
+}
+
+/* ===== HERO LOCATION ===== */
+.hero-location {
+    font-size: 1.1rem;
+    margin: var(--spacing-lg) 0;
+    opacity: 0.98;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+.location-icon {
+    margin-right: 8px;
+}
+
+/* ===== HERO TAGLINE ===== */
+.hero-tagline {
+    font-family: var(--serif);
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-style: italic;
+    margin: var(--spacing-md) 0 var(--spacing-xl);
+    opacity: 0.95;
+    letter-spacing: 0.5px;
+}
+
+/* ===== HERO DECORATIVE BOTTOM ===== */
+.hero-decorative-bottom {
+    margin-top: var(--spacing-xl);
+}
+
+.decor-flourish {
+    display: inline-block;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, white, transparent);
+    border-radius: 2px;
 }
 
 /* ===== UNIVERSES SECTION ===== */
