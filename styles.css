@@ -963,7 +963,7 @@ p {
 /* ===== INFO SECTION ===== */
 .info-section {
     padding: var(--spacing-2xl) var(--spacing-lg);
-    background: white;
+    background: linear-gradient(135deg, rgba(250, 247, 242, 0.95) 0%, rgba(255, 255, 255, 1) 100%);
 }
 
 .info-container {
@@ -1206,16 +1206,17 @@ p {
     }
 
     .hero {
-        height: 70vh;
+        height: 80vh;
         margin-top: 50px;
     }
 
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
+        letter-spacing: 2px;
     }
 
-    .hero-subtitle {
-        font-size: 1.2rem;
+    .hero-tagline {
+        font-size: 0.9rem;
     }
 
     .hero-ctas {
@@ -1223,11 +1224,19 @@ p {
         gap: var(--spacing-md);
     }
 
-    .hero .btn {
+    .btn-cta-primary {
         width: 100%;
     }
 
     .universes-container {
+        grid-template-columns: 1fr;
+    }
+
+    .services-intro-container {
+        grid-template-columns: 1fr;
+    }
+
+    .services-intro-images {
         grid-template-columns: 1fr;
     }
 
