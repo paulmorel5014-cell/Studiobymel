@@ -35,51 +35,64 @@
 
 <!-- ===== HERO SECTION ===== -->
 <header id="accueil" class="hero">
-    <div class="hero-bg"></div>
+    <div class="hero-bg">
+        <div class="hero-bg-content">
+            <svg class="hero-decoration" viewBox="0 0 1200 800" preserveAspectRatio="none">
+                <defs>
+                    <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#E8C5B8;stop-opacity:1" />
+                        <stop offset="50%" style="stop-color:#C9A97A;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#A8B89A;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="1200" height="800" fill="url(#heroGrad)"/>
+                <circle cx="200" cy="150" r="350" fill="white" opacity="0.15"/>
+                <circle cx="1000" cy="650" r="300" fill="white" opacity="0.1"/>
+                <ellipse cx="150" cy="750" rx="400" ry="200" fill="#A8B89A" opacity="0.08"/>
+            </svg>
+        </div>
+    </div>
+
     <div class="hero-content">
-        <div class="hero-decorative-top">
-            <span class="decor-line decor-left"></span>
-            <span class="decor-dot"></span>
-            <span class="decor-line decor-right"></span>
+        <div class="hero-intro">
+            <span class="hero-label">Bienvenue chez</span>
+            <h1 class="hero-brand">STUDIO BY MEL</h1>
+            <p class="hero-brand-tagline">La beauté n'attend pas ✨</p>
         </div>
 
-        <div class="rating-badge">
-            <span class="stars">⭐ 4,9</span>
-            <span class="separator">/</span>
-            <span class="reviews">526 avis</span>
+        <div class="hero-rating">
+            <span class="rating-stars">⭐⭐⭐⭐⭐</span>
+            <span class="rating-text"><strong>4,9</strong> — 526 avis clients</span>
         </div>
 
-        <div class="hero-universes-preview">
-            <div class="universe-preview hair">
-                <span class="universe-preview-icon">✂️</span>
-                <span class="universe-preview-text">Hair</span>
+        <h2 class="hero-main-title">Votre espace beauté, soin & bien-être</h2>
+
+        <div class="hero-services">
+            <div class="service-item">
+                <span class="service-icon">✂️</span>
+                <span class="service-name">Hair</span>
             </div>
-            <div class="universe-preview body">
-                <span class="universe-preview-icon">💆</span>
-                <span class="universe-preview-text">Body</span>
+            <div class="service-dot"></div>
+            <div class="service-item">
+                <span class="service-icon">💆</span>
+                <span class="service-name">Body</span>
             </div>
-            <div class="universe-preview zen">
-                <span class="universe-preview-icon">🧘</span>
-                <span class="universe-preview-text">Zen</span>
+            <div class="service-dot"></div>
+            <div class="service-item">
+                <span class="service-icon">🧘</span>
+                <span class="service-name">Zen</span>
             </div>
         </div>
 
-        <h1 class="hero-title">Votre espace beauté, soin & bien-être</h1>
-
-        <p class="hero-location">
-            <span class="location-icon">📍</span>
-            Voisins-le-Bretonneux (78960)
-        </p>
-
-        <p class="hero-tagline">La beauté n'attend pas ✨</p>
+        <p class="hero-location">📍 Voisins-le-Bretonneux (78960)</p>
 
         <div class="hero-ctas">
             <a href="https://planity.com" target="_blank" class="btn btn-primary">Prendre RDV en ligne</a>
             <a href="#soins" class="btn btn-secondary">Découvrir nos soins</a>
         </div>
 
-        <div class="hero-decorative-bottom">
-            <span class="decor-flourish"></span>
+        <div class="hero-scroll-indicator">
+            <span>↓</span>
         </div>
     </div>
 </header>
